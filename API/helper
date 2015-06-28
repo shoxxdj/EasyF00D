@@ -6,7 +6,7 @@ X	Créer un restaurant
 X	Afficher la liste de ses restaurants
 X	Créer un menu dans un restaurant
 X	Lister les commandes
-Se déconnecter
+X 	Se déconnecter
 
 Client
 
@@ -15,7 +15,7 @@ X	Se connecter
 X	Lister les restaurants
 X	Afficher les menus d'un restaurant
 X	Placer une commande sur un menu d'un restaurant
-Se déconnecter
+X	Se déconnecter
 
 ADD SOME FUCKING SECURITY MESSAGES
 
@@ -31,6 +31,8 @@ A	ListerSesRestos
 		GET /restaurateur/myresto
 A 	AjouterUnMenu
 		POST /restaurateur/myresto/idResto : idResto,Nom,Prix,Desc
+A 	ListerLesCommandes
+		GET /restaurateur/orders
 
 
 
