@@ -1,0 +1,51 @@
+Restaurateur
+
+X	S'enregistrer
+X	Se connecter
+X	Créer un restaurant
+X	Afficher la liste de ses restaurants
+X	Créer un menu dans un restaurant
+X	Lister les commandes
+Se déconnecter
+
+Client
+
+X	S'enregistrer 
+X	Se connecter
+X	Lister les restaurants
+X	Afficher les menus d'un restaurant
+X	Placer une commande sur un menu d'un restaurant
+Se déconnecter
+
+ADD SOME FUCKING SECURITY MESSAGES
+
+
+Restaurateur
+	Register
+		POST /restaurateur/register : Login,Password,Mail
+	Login
+		POST /restaurateur/login : Login,Password
+A	AjouterResto
+		POST /restaurateur/addresto: Name,Adresse,Tel
+A	ListerSesRestos
+		GET /restaurateur/myresto
+A 	AjouterUnMenu
+		POST /restaurateur/myresto/idResto : idResto,Nom,Prix,Desc
+
+
+
+
+Client
+	Register
+		POST /register : Login,Password,Mail
+	Login :
+		POST /login : Login,Password
+A	Lister Restaurants
+		GET /restaurants
+A 	Lister les Menus d'un restaurant
+		GET /restaurants/idResto: idResto
+A 	Avoir le détail d'un menu
+		GET /menus/idMenu
+A 	Placer une commande
+		POST /menus/idResto/idMenu : idResto,idMenu,date
+
