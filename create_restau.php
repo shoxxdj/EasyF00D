@@ -19,16 +19,16 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header col-md-offset-2">
+          	    <div class="navbar-header col-md-offset-2">
                     <a class="navbar-brand" href="index.php">Easy Food</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse col-md-4" id="bs-example-navbar-collapse-5">
                     <ul class="nav navbar-nav">
-                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="info.php">About</a></li>
                         <!-- <li class="disabled"><a href="#">Link</a></li> -->
                         <li class="dropdown">
-                          <a class="dropdown-toggle" data-toggle="dropdown">Register<b class="caret"></b></a>
+                     	  <a class="dropdown-toggle" data-toggle="dropdown">Register<b class="caret"></b></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="register.php">Client</a></li>
                                 <li><a href="register_pro.php">Restorer</a></li>
@@ -37,7 +37,7 @@
                     </ul>
                 </div><!-- /.navbar-collapse -->
                 <div id="connexion">
-                    <form action="connexion.php"  id="form_connexion"method="POST" class="navbar-form navbar-right">
+                    <form action="connexion.php" type ="POST" class="navbar-form navbar-right">
                 
                             <input type="text" name="login" placeholder="pseudo"/>
                         
@@ -49,3 +49,45 @@
             </div>
         </div><!-- /.container-fluid -->
     </nav>
+    <div class="row">
+        <div class="col-md-offset-2">
+            <h1>Creation Restau</h1>
+            </br>
+            <form method="POST" action="creation_resto.php">
+                <div class="row">
+                    <div class="col-md-1">
+                        <label>Nom du restau: </label>
+                    </div>
+                    <div class="col-md-4">
+                        <input name="name" type="text" class="form-control" placeholder="Pseudo">
+                    </div>
+                </div>
+                </br>
+                <div class="row">
+                    <div class="col-md-1">
+                        <label>Adresse: </label>
+                    </div>
+                    <div class="col-md-4">
+                        <input name="adress" type="text" class="form-control" placeholder="***">
+                    </div>
+                </div>
+                </br>
+                <div class="row">
+                    <div class="col-md-1">
+                        <label>Téléphone: </label>
+                    </div>
+                    <div class="col-md-4">
+                        <input name="tel" type="text" class="form-control" placeholder="email">
+                    </div>
+                </div>
+                </br>
+                <div class="row">
+                    <div class="col-md-1 col-md-offset-2">
+                        <button type="submit" class="btn btn-success btn-block"> S'inscrire </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -27,24 +27,10 @@
                     <ul class="nav navbar-nav">
                         <li><a href="contact.php">Contact</a></li>
                         <!-- <li class="disabled"><a href="#">Link</a></li> -->
-                        <li class="dropdown">
-                          <a class="dropdown-toggle" data-toggle="dropdown">Register<b class="caret"></b></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="register.php">Client</a></li>
-                                <li><a href="register_pro.php">Restorer</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
-                <div id="connexion">
-                    <form action="connexion.php"  id="form_connexion"method="POST" class="navbar-form navbar-right">
-                
-                            <input type="text" name="login" placeholder="pseudo"/>
-                        
-                            <input type="password" name="password" placeholder="****"/>
-                            <button class="btn btn-success" type="submit">Connexion</button>
-                        
-                    </form>
+                <div id="connexion" class="col-md-offset-6 collapse navbar-collapse col-md-2">
+                    <p id="welcome">Bienvenue Toto toto</p>
                 </div>
             </div>
         </div><!-- /.container-fluid -->
