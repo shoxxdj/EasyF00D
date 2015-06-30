@@ -45,7 +45,7 @@ Client
 A	Lister Restaurants
 		GET /restaurants
 A 	Lister les Menus d'un restaurant
-		GET /restaurants/idResto: idResto
+		GET /menus/idResto: idResto
 A 	Avoir le détail d'un menu
 		GET /menus/idMenu
 A 	Placer une commande
