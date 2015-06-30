@@ -4,6 +4,39 @@
     <div class="row">
     	<div class="col-md-offset-2 col-md-8">
         <center>
+        <?php
+          if(isset($_GET["error"]))
+          {
+            if($_GET["error"]==0)
+            {?>
+              <div class='alert alert-success alert-dismissable'>
+              <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>×</button>
+              <strong>Success ! </strong> 
+              Vous êtes bien enregistré, vous pouvez maintenant vous connecté !  
+              </div>
+          <?php
+            }
+            elseif ($_GET["error"]==3) 
+            {?>
+              <div class='alert alert-danger'>
+              <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>×</button>
+              <strong>Error ! </strong>   
+              Une erreur est survenue lors de l'inscription !
+              </div>
+            <?php
+            }
+            elseif ($_GET["error"]==2) 
+            {?>
+              <div class='alert alert-danger'>
+              <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>×</button>
+              <strong>Error ! </strong>   
+              Vous n'êtes pas enregistré !
+              </div>
+            <?php
+            }
+          }
+        ?> 
+        <br><br>
     		<h1>Easy Food</h1>
         <br><br>
     		<div class="jumbotron">
@@ -36,6 +69,5 @@
           </center>
     	</div>
     </div>
-    
 </body>
 </html>

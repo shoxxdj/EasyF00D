@@ -19,12 +19,12 @@ $postdata=http_build_query(array(
 	//Interrogation de l'API pour avoir les informations du site demandé
 	$result = file_get_contents('http://10.191.43.53:3000/register',false,$context);
 
-	if($result == "success")
+	if($result == "error")
 	{
-		echo "yes";
+		header('location: index.php?error=3');
 	}
-	elseif ($result=="error") {
-		echo "no";
+	elseif ($result=="success") {
+		header('location: index.php?error=0');
 	}
 	
 ?>

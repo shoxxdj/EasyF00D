@@ -34,7 +34,7 @@
                     </div>
                     </br>
                     <div class="row">
-                        <div class="col-md-1 col-md-offset-2">
+                        <div class="col-md-2 col-md-offset-2">
                             <button type="submit" class="btn btn-success btn-block"> S'inscrire </button>
                         </div>
                     </div>

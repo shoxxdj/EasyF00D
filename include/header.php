@@ -29,8 +29,11 @@
                         <!-- <li class="disabled"><a href="#">Link</a></li> -->
                     </ul>
                 </div><!-- /.navbar-collapse -->
-                <div id="connexion" class="col-md-offset-6 collapse navbar-collapse col-md-2">
-                    <p id="welcome">Bienvenue Toto toto</p>
+                <div id="connexion" class="col-md-offset-3 collapse navbar-collapse col-md-2">
+                    <p id="welcome">Bienvenue <?php echo $_SESSION["login"];?></p>
+                </div>
+                <div class="col-md-1">
+                    <a href="logout.php"><button id="logout" class="btn btn-danger">Log out</button></a>
                 </div>
             </div>
         </div><!-- /.container-fluid -->

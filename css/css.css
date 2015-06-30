@@ -1,6 +1,3 @@
-#connexion{
-	margin-left: 61%;
-}
 .jumbotron{
 	width: 600px;
 	height: 400px;
@@ -22,4 +19,10 @@ a{
 }
 html{
 	width:99%;
+}
+#logout{
+	margin-top: 4%;
+}
+#date{
+	margin-right: 5%;
 }
