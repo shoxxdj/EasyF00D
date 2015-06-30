@@ -51,3 +51,7 @@ A 	Avoir le détail d'un menu
 A 	Placer une commande
 		POST /menus/idResto/idMenu : idResto,idMenu,date
 
+-----------------------------------------------------------------
+A Faire
+GetRestaurant by id
+GetCLient by id
