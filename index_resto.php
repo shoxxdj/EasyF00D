@@ -37,7 +37,7 @@
           }
         ?> 
         <br><br>
-    		<h1>Easy Food (Client)</h1>
+    		<h1>Easy Food</h1>
         <br><br>
     		<div class="jumbotron">
               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -60,9 +60,9 @@
               </div>
               <div class="jumbotron-contents">
                 <h1>Faciliter la gestion du déjeuner chez Cdiscount !</h1>
-                <h2>Pour les restaurateurs (<a href='resto/index_resto.php'>cliquez ici)</a></h2>
+                <h2>Pour les restaurateurs</h2>
                 <p>Proposez votre menu du jour et gérer les commandes en avance !</p>
-                <h2>Pour les clients</h2>
+                <h2>Pour les clients (<a href='../index.php'>cliquez ici)</a></h2>
                 <p>Facilitez votre commande et réservez votre plat en avance ! Fini la longue file d'attente</p>
               </div>
             </div>

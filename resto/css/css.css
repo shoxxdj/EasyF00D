@@ -1,0 +1,28 @@
+.jumbotron{
+	width: 600px;
+	height: 400px;
+}
+#welcome{
+	margin-top: 10%;
+	color: white;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+#reserve{
+	width: 48px;
+	height: 48px;
+}
+#form_connexion{
+	margin-right: 1%;
+}
+html{
+	width:99%;
+}
+#logout{
+	margin-top: 4%;
+}
+#date{
+	margin-right: 5%;
+}

@@ -20,31 +20,20 @@
             <div class="row">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header col-md-offset-2">
-                    <a class="navbar-brand" href="index.php">Easy Food</a>
+                    <a class="navbar-brand" href="index_resto.php">Easy Food</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse col-md-4" id="bs-example-navbar-collapse-5">
                     <ul class="nav navbar-nav">
-                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="commandes.php">Commandes</a></li>
                         <!-- <li class="disabled"><a href="#">Link</a></li> -->
-                        <li class="dropdown">
-                          <a class="dropdown-toggle" data-toggle="dropdown">Register<b class="caret"></b></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="register.php">Client</a></li>
-                                <li><a href="register_pro.php">Restorer</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
-                <div id="connexion">
-                    <form action="connexion.php"  id="form_connexion"method="POST" class="navbar-form navbar-right">
-                
-                            <input type="text" name="login" placeholder="pseudo"/>
-                            
-                            <input type="password" name="password" placeholder="****"/>
-                            <button class="btn btn-success" type="submit">Connexion</button>
-                        
-                    </form>
+                <div id="connexion" class="col-md-offset-3 collapse navbar-collapse col-md-2">
+                    <p id="welcome">Bienvenue <?php echo $_SESSION["login"];?></p>
+                </div>
+                <div class="col-md-1">
+                    <a href="logout.php"><button id="logout" class="btn btn-danger">Log out</button></a>
                 </div>
             </div>
         </div><!-- /.container-fluid -->

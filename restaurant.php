@@ -9,11 +9,10 @@ else
     include('./include/header.php');
     #Get Request for this restaurant
         $curl_resto = curl_init();
-        $params='';
         $params=$_GET["resto"];
         curl_setopt_array($curl_resto, array(
             CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_URL => 'http://10.191.43.53:3000/menus/'.$params));
+            CURLOPT_URL => "http://10.191.43.53:3000/menus/$params"));
         curl_setopt($curl_resto, CURLOPT_COOKIE, "myApp=".$_SESSION["cookie"]);
         $resp = curl_exec($curl_resto);
         curl_close($curl_resto);
